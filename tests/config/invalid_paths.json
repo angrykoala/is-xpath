@@ -1,5 +1,6 @@
 [
     "p",
     ".p",
-    "invalid::*/invalid::element"
+    "invalid::*/invalid::element",
+    ".//header/"
 ]
