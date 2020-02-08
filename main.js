@@ -1,7 +1,9 @@
-const VALID_AXIS = ["ancestor", "ancestor-or-self", "attribute", "child", "descendant", "descendant-or-self",
-"following", "following-sibling", "namespace", "parent", "preceding", "preceding-sibling", "self"];
+"use strict";
 
-export default function isXPath(s: string): boolean {
+const VALID_AXIS = ["ancestor", "ancestor-or-self", "attribute", "child", "descendant", "descendant-or-self",
+    "following", "following-sibling", "namespace", "parent", "preceding", "preceding-sibling", "self"];
+
+module.exports = function isXPath(s) {
     // Test for @ and plain nodes
     if (s[0] === '/') return true;
     if (/^.\./.test(s)) return true;
@@ -11,6 +13,6 @@ export default function isXPath(s: string): boolean {
         if (VALID_AXIS.indexOf(axe) !== -1) return true;
     }
     return false;
-}
+};
 
 // TO CHECK: Invalid .//header/
