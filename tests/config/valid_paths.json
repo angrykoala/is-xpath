@@ -5,5 +5,17 @@
     "//title[@*]",
     "/element/*",
     "//title | //element",
-    "child::*/child::element"
+    "child::*/child::element",
+    "child::node()",
+    "/elements/elem[tag>35]/title",
+    "//*",
+    "//text()",
+    "//node()",
+    "//comment()",
+    "//li[1]",
+    "//li[position() = 1]",
+    "//li[a or h2]",
+    "//li[last()]",
+    "//li[ a/text()=\"link\"]",
+    "//a[starts-with(@href, \"https\")]"
 ]
