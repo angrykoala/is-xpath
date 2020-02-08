@@ -1,6 +1,6 @@
 "use strict";
 
-const assert = require('chai');
+const {assert} = require('chai');
 const isXPath = require('..');
 
 describe("Is XPath", () => {
