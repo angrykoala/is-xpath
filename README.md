@@ -1,4 +1,4 @@
-Koalafied Typescript
+is-xpath
 ====================
 _by @angrykoala_
 
